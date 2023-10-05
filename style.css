@@ -1,0 +1,130 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600&display=swap");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004175;
+  color: #ffffff;
+  padding: 20px;
+  border-bottom: 2px solid #89deef;
+}
+
+.header_nav a {
+  color: #ffffff;
+  margin-left: 20px; /* Space between navigation links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.header_nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+body footer {
+  font-family: "Open Sans", "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.dog_container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+}
+
+/* Each dog's container */
+.dog {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 8px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.trait {
+  background-color: #89deef;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  margin: 1px;
+  cursor: default; /* not clickable */
+  text-align: left;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 20px; /* Add rounded corners */
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 25vh;
+  padding-top: 25px;
+}
+
+.footer_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a6a9f0;
+  color: #ffffff;
+  font-size: 3.5vw;
+  font-family: "Oswald";
+  text-decoration: none;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+
+.donate {
+  background-image: linear-gradient(
+    rgba(163, 162, 239, 0.65),
+    rgba(166, 169, 240, 0.65)
+    ),
+    url(images/donate.jpg);
+}
+
+.volunteer {
+  background-image: linear-gradient(
+      rgba(163, 162, 239, 0.65),
+      rgba(166, 169, 240, 0.65)
+    ),
+    url(images/volunteer.jpg);
+}
+
+.location {
+  background-image: linear-gradient(
+    rgba(163, 162, 239, 0.65),
+    rgba(166, 169, 240, 0.65)
+    ),
+    url(images/location.png);
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+}
+
+
+.donate:hover {
+  background-image: url(images/donate.jpg); /* Set the image without the blue overlay on hover */
+}
+
+.volunteer:hover {
+  background-image: url(images/volunteer.jpg); /* Set the image without the blue overlay on hover */
+}
+
+.location:hover {
+  background-image: url(images/location.png); /* Set the image without the blue overlay on hover */
+}
